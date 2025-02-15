@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香湘 - 药学专业</title>
+    <style>
+        /* 保留原有CSS基础上修改配色方案 */
+        header {
+            background-color: #3a7ca5;  /* 更改为医疗蓝 */
+        }
+        nav {
+            background-color: #2f6690;
+        }
+        button {
+            background-color: #4c9f70;  /* 更改为医疗绿 */
+        }
+        /* 新增药学特色样式 */
+        。lab-icon {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="xiangxiang.jpg" alt="香湘的照片" class="profile-img">
+            <h1>香湘</h1>
+            <p>药学本科 | 健康科学探索者</p>
+        </div>
+    </header>
+
+    <nav>...（导航栏保持不变）...</nav>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <p>湖南医药学院药学专业2020级本科生，GPA 3.8/4.0，专业排名前5%。主修课程涵盖药物化学、药理学、药剂学、药物分析等核心领域，熟练掌握HPLC、GC等分析仪器操作。现于湘雅医院药剂科实习，参与临床用药监护工作。</p>
+            <div style="margin-top:20px">
+                <img src="microscope.svg" class="lab-icon" alt="实验室">
+                <span>执业药师资格证备考中 | 国家三级健康管理师</span>
+            </div>
+        </div>
+    </section>
+<div class="timeline">
+    <div class="timeline-item">
+        <h4>2020-至今 湖南医药学院</h4>
+        <p>药学学士（在读）</p>
+        <p>核心课程：生物药剂学（92）、药物分析（89）、临床药理学（91）</p>
+    </div>
+</div>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">专业技能</h2>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>🔬 实验技能</h3>
+                    <ul>
+                        <li>药物制剂（片剂/胶囊制备）</li>
+                        <li>HPLC药物含量测定</li>
+                        <li>微生物限度检查</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>📚 药学知识</h3>
+                    <ul>
+                        <li>临床用药指导</li>
+                        <li>药典标准应用</li>
+                        <li>ADR监测分析</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>💻 数字技能</h3>
+                    <ul>
+                        <li>SPSS数据分析</li>
+                        <li>ChemDraw分子建模</li>
+                        <li>医院HIS系统操作</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">科研实践</h2>
+            <div class="project">
+                <h3>中药配方颗粒标准化研究（2023）</h3>
+                <ul>
+                    <li>参与《湖南省中药配方颗粒标准》制定工作</li>
+                    <li>完成15批次金银花配方颗粒的质量考察</li>
+                    <li>建立特征图谱分析方法（HPLC-DAD）</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>社区合理用药科普（2022）</h3>
+                <ul>
+                    <li>策划执行老年人用药安全宣教活动</li>
+                    <li>制作发放《家庭药箱管理手册》</li>
+                    <li>服务覆盖长沙3个社区500+居民</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">学术联系</h2>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="您的姓名" required>
+                <input type="email" name="email" placeholder="联系邮箱" required>
+                <select name="subject" required>
+                    <option value="">请选择咨询类型</option>
+                    <option value="research">科研合作</option>
+                    <option value="internship">实习机会</option>
+                    <option value="academic">学术交流</option>
+                </select>
+                <textarea name="message" placeholder="请输入您的具体需求..." rows="5" required></textarea>
+                <button type="submit">发送询函</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
