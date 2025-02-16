@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香湘 - 药学专业</title>
+    <style>
+        /* 新增背景样式 */
+        body {
+            background: linear-gradient(135deg, #e6f4f1 0%, #f0f7fa 100%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background: url('molecular-bg.jpg');
+            position: relative;
+            overflow: hidden;
+			text-align:center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(58, 124, 165, 0.9);
+        }
+
+        /* 新增卡片样式 */
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 新增时间轴样式 */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #4c9f70;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        /* 新增图标动画 */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .lab-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://pic.962.net/up/2017-10/20171020141742653650.jpg" width="150" height="150"   class="profile-img">
+            <h1 style="position: relative; z-index: 1;">香湘</h1>
+            <p style="position: relative; z-index: 1;"> 临床医学本科 | 健康科学探索者</p>
+        </div>
+    </header>
+
+    <!-- 关于我部分 -->
+    <section id="about">
+        <div class="container">
+            <div class="card">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="text-content">
+                        <p>湖南医药学院药学专业2020级本科生，GPA 3.8/4.0，专业排名前5%。主修课程涵盖药物化学、药理学、药剂学、药物分析等核心领域，熟练掌握HPLC、GC等分析仪器操作。现于湘雅医院药剂科实习，参与临床用药监护工作。</p>
+                        <div style="margin-top:20px">
+                            <img src="microscope.svg" class="lab-icon" alt="🔬实验室">
+                            <span>执业药师资格证备考中 | 国家三级健康管理师</span>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>年医学学习</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>📚500+</h3>
+                            <p>小时实验室经验</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3</h3>
+                            <p>项科研项目</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 时间轴部分 -->
+    <section id="timeline">
+        <div class="container">
+            <h2 class="section-title">成长历程</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2024.09</h4>
+                    <p>考入湖南医药学院 临床医学专业</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2025.06</h4>
+                    <p>获得校级一等奖学金</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2026.03</h4>
+                    <p>参与中药配方颗粒标准化研究</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2027.07</h4>
+                    <p>开始在湘雅医院实习</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 其他部分保持不变，但都使用card样式包裹内容 -->  <section id="contact">
+        <div class="container">
+            <h2 class="section-title">学术联系</h2>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="您的姓名" required>
+                <input type="email" name="email" placeholder="联系邮箱" required>
+                <select name="subject" required>
+                    <option value="">请选择咨询类型</option>
+                    <option value="research">科研合作</option>
+                    <option value="internship">实习机会</option>
+                    <option value="academic">学术交流</option>
+                </select>
+                <textarea name="message" placeholder="请输入您的具体需求..." rows="5" required></textarea>
+                <button type="submit">发送询函</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
